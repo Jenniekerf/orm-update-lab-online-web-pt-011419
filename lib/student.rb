@@ -51,8 +51,8 @@ class Student
   def self.new_from_db(row)
     id = row[0]
     name = row[1]
-    grade = [2]
-    binding.pry
+    grade = row[2]
+    #binding.pry
     self.new(id, name, grade)
   end
   
